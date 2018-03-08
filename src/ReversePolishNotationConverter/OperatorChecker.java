@@ -1,0 +1,5 @@
+package ReversePolishNotationConverter;
+
+interface OperatorChecker {
+
+}
