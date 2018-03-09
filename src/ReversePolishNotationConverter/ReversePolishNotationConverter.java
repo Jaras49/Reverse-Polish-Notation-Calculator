@@ -1,11 +1,25 @@
 package ReversePolishNotationConverter;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Stack;
 
 public class ReversePolishNotationConverter implements Converter {
     private String out = "";
     private Stack<String> stack = new Stack();
     private String[] operators;
+    private List<OperatorChecker> operations;
+
+    public ReversePolishNotationConverter()
+    {
+        operations = new ArrayList<>();
+        OperatorChecker p1 = new PriorityOneOperators();
+        OperatorChecker p2 = new PriorityTwoOperators();
+        operations.add(p1);
+        operations.add(p2);
+        //operations.add(new PriorityOneOperators());
+        //operations.add(new PriorityTwoOperators());
+    }
 
     @Override
     public String convert(String expression) {
@@ -13,7 +27,8 @@ public class ReversePolishNotationConverter implements Converter {
 
         for (String operator : operators)
         {
-            if(operator.equals("-") || operator.equals("+") || operator.equals("*") || operator.equals("/"))
+            OperatorChecker oc = getOperation(operator);
+            if(oc != null && oc.isOperator(operator))
             {
                 if(stack.empty())
                 {
@@ -21,7 +36,7 @@ public class ReversePolishNotationConverter implements Converter {
                 }
                 else
                 {
-                    out = out + " " + getOperatorsWithPriorityLowerOrEqual(operator);
+                    out = out + " " + getOperatorsWithPriorityLowerOrEqual(operator,oc.getPriority() );
                     stack.push(operator);
                 }
             }
@@ -33,24 +48,14 @@ public class ReversePolishNotationConverter implements Converter {
 
         return out + " " + getRestFromStack();
     }
-    private int getPriority(String operator)
+    private String getOperatorsWithPriorityLowerOrEqual( String operator, int operatorPriority)
     {
-        if (operator.equals("+") || operator.equals("-"))
-        {
-            return 1;
-        }
-        else if (operator.equals("*") || operator.equals("/"))
-        {
-            return 2;
-        }
-        return 0;
-    }
-    private String getOperatorsWithPriorityLowerOrEqual(String operator)
-    {
+
         String result = "";
         while (!stack.empty())
         {
-            if (getPriority(operator) <= getPriority(stack.peek()))
+            OperatorChecker oc = getOperation(stack.peek());
+            if ( operatorPriority <= oc.getPriority() && oc != null)
             {
                 result = result + " " + stack.pop();
             }
@@ -68,5 +73,14 @@ public class ReversePolishNotationConverter implements Converter {
             result = result + " " + stack.pop();
 
         return result;
+    }
+    private OperatorChecker getOperation(String operator)
+    {
+        for (OperatorChecker operation : operations)
+        {
+            if (operation.isOperator(operator))
+                return operation;
+        }
+        return null;
     }
 }

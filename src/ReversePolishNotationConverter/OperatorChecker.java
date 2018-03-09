@@ -1,5 +1,7 @@
 package ReversePolishNotationConverter;
 
-interface OperatorChecker {
-
+interface OperatorChecker
+{
+    boolean isOperator(String operator);
+    int getPriority();
 }
