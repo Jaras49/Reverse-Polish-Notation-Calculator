@@ -1,8 +1,8 @@
-package ReversePolishNotationConverter;
+package com.reversepolishnotationconverter.operators;
 
 import java.util.Stack;
 
-interface OperatorChecker
+public interface OperatorChecker
 {
     boolean isOperator(String operator);
     int getPriority();
