@@ -1,35 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="98e48298-4ea4-47fa-af47-526367afb1a2" name="Default" comment="Upgraded computing logic">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/ONP/com/calculator/Calculator.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/ONP/com/calculator/ReversePolishNotationCalculator.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/ONP/com/calculator/operations/AdditionOperation.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/ONP/com/calculator/operations/DivisionOperation.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/ONP/com/calculator/operations/MultiplicationOperation.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/ONP/com/calculator/operations/SubtractionOperation.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/ONP/com/calculator/operations/TwoArgumentOperation.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/ONP/com/reversepolishnotationconverter/Converter.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/ONP/com/reversepolishnotationconverter/ReversePolishNotationConverter.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/ONP/com/reversepolishnotationconverter/operators/Operator.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/ONP/com/reversepolishnotationconverter/operators/PriorityOneOperators.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/ONP/com/reversepolishnotationconverter/operators/PriorityTwoOperators.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/ONP/com/reversepolishnotationconverter/operators/operations/Operations.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/calculator/operations/AdditionOperation.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/calculator/operations/DivisionOperation.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/calculator/operations/MultiplicationOperation.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/calculator/operations/SubtractionOperation.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/calculator/operations/TwoArgumentOperation.java" />
+    <list default="true" id="98e48298-4ea4-47fa-af47-526367afb1a2" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/ONP/Test.class" afterPath="$PROJECT_DIR$/out/production/ONP/Test.class" />
-      <change beforePath="$PROJECT_DIR$/src/Test.java" afterPath="$PROJECT_DIR$/src/Test.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/calculator/ReversePolishNotationCalculator.java" afterPath="$PROJECT_DIR$/src/com/calculator/ReversePolishNotationCalculator.java" />
       <change beforePath="$PROJECT_DIR$/src/com/reversepolishnotationconverter/ReversePolishNotationConverter.java" afterPath="$PROJECT_DIR$/src/com/reversepolishnotationconverter/ReversePolishNotationConverter.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/reversepolishnotationconverter/operators/OperatorChecker.java" afterPath="$PROJECT_DIR$/src/com/reversepolishnotationconverter/operators/Operator.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/reversepolishnotationconverter/operators/PriorityOneOperators.java" afterPath="$PROJECT_DIR$/src/com/reversepolishnotationconverter/operators/PriorityOneOperators.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/reversepolishnotationconverter/operators/PriorityTwoOperators.java" afterPath="$PROJECT_DIR$/src/com/reversepolishnotationconverter/operators/PriorityTwoOperators.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/reversepolishnotationconverter/operators/operations/Operations.java" afterPath="$PROJECT_DIR$/src/com/reversepolishnotationconverter/operators/operations/Operations.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,49 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Test.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReversePolishNotationCalculator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/calculator/ReversePolishNotationCalculator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
-              <caret line="55" column="1" lean-forward="true" selection-start-line="55" selection-start-column="1" selection-end-line="55" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Operations.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/reversepolishnotationconverter/operators/operations/Operations.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="42" column="22" lean-forward="true" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1354#1355#0" expanded="true" />
-                <element signature="e#1380#1381#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReversePolishNotationConverter.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ReversePolishNotationConverter.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/reversepolishnotationconverter/ReversePolishNotationConverter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-16">
-              <caret line="39" column="9" lean-forward="false" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
+            <state relative-caret-position="525">
+              <caret line="25" column="30" lean-forward="true" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -209,6 +145,12 @@
               <item name="ONP" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="calculator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ONP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ONP" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="operations" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ONP" type="b2602c69:ProjectViewProjectNode" />
@@ -402,7 +344,7 @@
       <workItem from="1520519029212" duration="307000" />
       <workItem from="1520520119827" duration="7252000" />
       <workItem from="1520587300347" duration="7824000" />
-      <workItem from="1520693201236" duration="22914000" />
+      <workItem from="1520693201236" duration="26062000" />
     </task>
     <task id="LOCAL-00001" summary="First version of algorithm which converts expression into reverse polish notation + algorithm that computes RPN">
       <created>1520522064027</created>
@@ -432,11 +374,18 @@
       <option name="project" value="LOCAL" />
       <updated>1520767646333</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Upgraded computing logic">
+      <created>1520775048762</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1520775048762</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86682000" />
+    <option name="totallyTimeSpent" value="89830000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -450,7 +399,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.5021482" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.49785176" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -912,20 +861,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/reversepolishnotationconverter/ReversePolishNotationConverter.java">
+    <entry file="file://$PROJECT_DIR$/src/com/calculator/ReversePolishNotationCalculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-16">
-          <caret line="39" column="9" lean-forward="false" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
+        <state relative-caret-position="378">
+          <caret line="18" column="51" lean-forward="true" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/calculator/ReversePolishNotationCalculator.java">
+    <entry file="file://$PROJECT_DIR$/src/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="55" column="1" lean-forward="true" selection-start-line="55" selection-start-column="1" selection-end-line="55" selection-end-column="1" />
+        <state relative-caret-position="357">
+          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -934,7 +883,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/reversepolishnotationconverter/operators/operations/Operations.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
+        <state relative-caret-position="173">
           <caret line="42" column="22" lean-forward="true" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -944,10 +893,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test.java">
+    <entry file="file://$PROJECT_DIR$/src/com/reversepolishnotationconverter/ReversePolishNotationConverter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        <state relative-caret-position="525">
+          <caret line="25" column="30" lean-forward="true" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

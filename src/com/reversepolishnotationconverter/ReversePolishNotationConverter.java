@@ -10,9 +10,7 @@ import java.util.Stack;
 
 public class ReversePolishNotationConverter implements Converter
 {
-    private String out = "";
-    private Stack<String> stack = new Stack();
-    private String[] operators;
+    private Stack<String> stack;
     private List<Operator> operations;
 
     public ReversePolishNotationConverter()
@@ -22,8 +20,13 @@ public class ReversePolishNotationConverter implements Converter
         operations.add(new PriorityTwoOperators());
     }
     @Override
-    public String convert(String expression) {
-        this.operators = expression.split(" ");
+    public String convert(String expression)
+    {
+        String out = "";
+        stack = new Stack<>();
+        String[] operators;
+
+        operators = expression.split(" ");
 
         for (String operator : operators)
         {
