@@ -1,6 +1,6 @@
 package com.reversepolishnotationconverter;
 
-import com.reversepolishnotationconverter.operators.OperatorChecker;
+import com.reversepolishnotationconverter.operators.Operator;
 import com.reversepolishnotationconverter.operators.PriorityOneOperators;
 import com.reversepolishnotationconverter.operators.PriorityTwoOperators;
 
@@ -13,7 +13,7 @@ public class ReversePolishNotationConverter implements Converter
     private String out = "";
     private Stack<String> stack = new Stack();
     private String[] operators;
-    private List<OperatorChecker> operations;
+    private List<Operator> operations;
 
     public ReversePolishNotationConverter()
     {
@@ -27,7 +27,7 @@ public class ReversePolishNotationConverter implements Converter
 
         for (String operator : operators)
         {
-            OperatorChecker oc = getOperation(operator);
+            Operator oc = getOperation(operator);
             if(oc != null && oc.isOperator(operator))      // When operator
             {
                stack = oc.process(stack, operator);
@@ -38,7 +38,6 @@ public class ReversePolishNotationConverter implements Converter
                 out = out + " " + operator;
             }
         }
-
         return out + " " + getRestFromStack();
     }
     private String getRestFromStack ()
@@ -49,9 +48,9 @@ public class ReversePolishNotationConverter implements Converter
 
         return result;
     }
-    public OperatorChecker getOperation(String operator)
+    public Operator getOperation(String operator)
     {
-        for (OperatorChecker operation : operations)
+        for (Operator operation : operations)
         {
             if (operation.isOperator(operator))
                 return operation;
