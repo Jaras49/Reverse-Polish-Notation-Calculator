@@ -1,6 +1,6 @@
 package com.reversepolishnotationconverter.operators.operations;
 
-import com.reversepolishnotationconverter.operators.OperatorChecker;
+import com.reversepolishnotationconverter.operators.Operator;
 import com.reversepolishnotationconverter.ReversePolishNotationConverter;
 
 import java.util.Stack;
@@ -33,7 +33,7 @@ public abstract class Operations
         while (!stack.empty())
         {
             ReversePolishNotationConverter temp = new ReversePolishNotationConverter();    //TODO <<<< To chyba nie jest dobre rozwiązanie, trzeba to sprawdzić
-            OperatorChecker oc = temp.getOperation(stack.peek());
+            Operator oc = temp.getOperation(stack.peek());
             if ( getPriority() <= oc.getPriority() && oc != null)
             {
                 result = result + " " + stack.pop();

@@ -2,7 +2,7 @@ package com.reversepolishnotationconverter.operators;
 
 import java.util.Stack;
 
-public interface OperatorChecker
+public interface Operator
 {
     boolean isOperator(String operator);
     int getPriority();
