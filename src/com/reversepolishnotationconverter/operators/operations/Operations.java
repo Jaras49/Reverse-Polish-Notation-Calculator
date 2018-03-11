@@ -4,15 +4,17 @@ import com.reversepolishnotationconverter.operators.Operator;
 import com.reversepolishnotationconverter.ReversePolishNotationConverter;
 
 import java.util.Stack;
+import java.util.StringJoiner;
 
 public abstract class Operations
 {
     private String out;
+    private StringJoiner stringJoiner;
     private Stack<String> stack;
 
     public Stack<String> process(Stack<String> stack, String operator)
     {
-        this.out = "";
+        stringJoiner = new StringJoiner(" ");
         this.stack = stack;
 
         if (this.stack.empty())
@@ -21,14 +23,15 @@ public abstract class Operations
         }
         else
         {
-            out = out + " " + getOperatorsWithPriorityLowerOrEqual();
+            stringJoiner.merge(getOperatorsWithPriorityLowerOrEqual());
             this.stack.push(operator);
         }
+        ///out = stringJoiner.toString();
         return this.stack;
     }
-    private String getOperatorsWithPriorityLowerOrEqual()
+    private StringJoiner getOperatorsWithPriorityLowerOrEqual()
     {
-        String result = "";
+        StringJoiner stringJoiner = new StringJoiner(" ");
 
         while (!stack.empty())
         {
@@ -36,18 +39,18 @@ public abstract class Operations
             Operator oc = temp.getOperation(stack.peek());
             if ( getPriority() <= oc.getPriority() && oc != null)
             {
-                result = result + " " + stack.pop();
+                stringJoiner.add(stack.pop());
             }
             else
             {
                 break;
             }
         }
-        return result;
+        return stringJoiner;
     }
-    public String getOut()
+    public StringJoiner getOut()
     {
-        return out;
+        return this.stringJoiner;
     }
     public abstract int getPriority();
 }
