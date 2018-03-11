@@ -1,22 +1,15 @@
-package ReversePolishNotationConverter;
+package com.reversepolishnotationconverter.operators.operations;
+
+import com.reversepolishnotationconverter.operators.OperatorChecker;
+import com.reversepolishnotationconverter.ReversePolishNotationConverter;
 
 import java.util.Stack;
 
-public class PriorityTwoOperators implements OperatorChecker
+public abstract class Operations
 {
     private String out;
     private Stack<String> stack;
-    @Override
-    public boolean isOperator(String operator)
-    {
-        return "*".equals(operator) || "/".equals(operator);
-    }
-    @Override
-    public int getPriority()
-    {
-        return 2;
-    }
-    @Override
+
     public Stack<String> process(Stack<String> stack, String operator)
     {
         this.out = "";
@@ -31,10 +24,9 @@ public class PriorityTwoOperators implements OperatorChecker
             out = out + " " + getOperatorsWithPriorityLowerOrEqual();
             this.stack.push(operator);
         }
-
         return this.stack;
     }
-    private String getOperatorsWithPriorityLowerOrEqual() //TODO gdzieś trzeba wydzielić ten kod dlatego że się powtarza
+    private String getOperatorsWithPriorityLowerOrEqual()
     {
         String result = "";
 
@@ -53,11 +45,9 @@ public class PriorityTwoOperators implements OperatorChecker
         }
         return result;
     }
-
-    @Override
     public String getOut()
     {
         return out;
     }
+    public abstract int getPriority();
 }
-

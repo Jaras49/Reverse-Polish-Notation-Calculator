@@ -1,5 +1,5 @@
 import java.util.ArrayDeque;
-import ReversePolishNotationConverter.*;
+import com.reversepolishnotationconverter.ReversePolishNotationConverter;
 
 interface Calculator {
 

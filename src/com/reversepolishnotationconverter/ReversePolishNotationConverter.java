@@ -1,4 +1,8 @@
-package ReversePolishNotationConverter;
+package com.reversepolishnotationconverter;
+
+import com.reversepolishnotationconverter.operators.OperatorChecker;
+import com.reversepolishnotationconverter.operators.PriorityOneOperators;
+import com.reversepolishnotationconverter.operators.PriorityTwoOperators;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -45,7 +49,7 @@ public class ReversePolishNotationConverter implements Converter
 
         return result;
     }
-    OperatorChecker getOperation(String operator)
+    public OperatorChecker getOperation(String operator)
     {
         for (OperatorChecker operation : operations)
         {
