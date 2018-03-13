@@ -7,12 +7,11 @@ import com.reversepolishnotationconverter.operators.PriorityTwoOperators;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
+import java.util.StringJoiner;
 
 public class ReversePolishNotationConverter implements Converter
 {
-    private String out = "";
-    private Stack<String> stack = new Stack();
-    private String[] operators;
+    private Stack<String> stack;
     private List<Operator> operations;
 
     public ReversePolishNotationConverter()
@@ -22,8 +21,13 @@ public class ReversePolishNotationConverter implements Converter
         operations.add(new PriorityTwoOperators());
     }
     @Override
-    public String convert(String expression) {
-        this.operators = expression.split(" ");
+    public String convert(String expression)
+    {
+        StringJoiner stringJoiner = new StringJoiner(" ");
+        stack = new Stack<>();
+        String[] operators;
+
+        operators = expression.split(" ");
 
         for (String operator : operators)
         {
@@ -31,22 +35,22 @@ public class ReversePolishNotationConverter implements Converter
             if(oc != null && oc.isOperator(operator))      // When operator
             {
                stack = oc.process(stack, operator);
-               out = out + " " + oc.getOut();
+               stringJoiner.merge(oc.getOut());
             }
             else                                          // When number
             {
-                out = out + " " + operator;
+                stringJoiner.add(operator);
             }
         }
-        return out + " " + getRestFromStack();
+        return stringJoiner.merge(getRestFromStack()).toString();
     }
-    private String getRestFromStack ()
+    private StringJoiner getRestFromStack ()
     {
-        String result = "";
+        StringJoiner stringJoiner = new StringJoiner(" ");
         while (!stack.empty())
-            result = result + " " + stack.pop();
+            stringJoiner.add(stack.pop());
 
-        return result;
+        return stringJoiner;
     }
     public Operator getOperation(String operator)
     {
