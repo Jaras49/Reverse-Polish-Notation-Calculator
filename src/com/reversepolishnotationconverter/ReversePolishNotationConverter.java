@@ -1,8 +1,6 @@
 package com.reversepolishnotationconverter;
 
-import com.reversepolishnotationconverter.operators.Operator;
-import com.reversepolishnotationconverter.operators.PriorityOneOperators;
-import com.reversepolishnotationconverter.operators.PriorityTwoOperators;
+import com.reversepolishnotationconverter.operators.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,6 +17,8 @@ public class ReversePolishNotationConverter implements Converter
         operations = new ArrayList<>();
         operations.add(new PriorityOneOperators());
         operations.add(new PriorityTwoOperators());
+        operations.add(new LeftBracket());
+        operations.add(new RightBracket());
     }
     @Override
     public String convert(String expression)
@@ -35,6 +35,7 @@ public class ReversePolishNotationConverter implements Converter
             if(oc != null && oc.isOperator(operator))      // When operator
             {
                stack = oc.process(stack, operator);
+               if (oc.getOut() != null)
                stringJoiner.merge(oc.getOut());
             }
             else                                          // When number
