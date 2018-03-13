@@ -29,7 +29,6 @@ public class RightBracket extends Operations implements Operator
             super.stringJoiner.add(super.stack.pop());
         super.stack.pop();
 
-
         return super.stack;
     }
 }
