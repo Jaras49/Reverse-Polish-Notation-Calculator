@@ -8,9 +8,8 @@ import java.util.StringJoiner;
 
 public abstract class Operations
 {
-    private String out;
-    private StringJoiner stringJoiner;
-    private Stack<String> stack;
+    protected StringJoiner stringJoiner;
+    protected Stack<String> stack;
 
     public Stack<String> process(Stack<String> stack, String operator)
     {
@@ -26,7 +25,7 @@ public abstract class Operations
             stringJoiner.merge(getOperatorsWithPriorityLowerOrEqual());
             this.stack.push(operator);
         }
-        ///out = stringJoiner.toString();
+
         return this.stack;
     }
     private StringJoiner getOperatorsWithPriorityLowerOrEqual()
