@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ONP.iml" filepath="$PROJECT_DIR$/ONP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/ONP.iml" filepath="$PROJECT_DIR$/.idea/ONP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ONP_main.iml" filepath="$PROJECT_DIR$/.idea/modules/ONP_main.iml" group="ONP" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ONP_test.iml" filepath="$PROJECT_DIR$/.idea/modules/ONP_test.iml" group="ONP" />
     </modules>
   </component>
 </project>
