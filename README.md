@@ -9,4 +9,4 @@ Added support for brackets operations.
 
 Added Tests
 
-<<<<<<Project is currently on hold due to work on WebCrawler>>>>>>>>>
+Project is currently on hold due to work on WebCrawler
